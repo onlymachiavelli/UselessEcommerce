@@ -1,0 +1,585 @@
+@import "main_responsive.css";
+@font-face{
+    font-family:"Ubuntu";
+    src:url("ub/UbuntuMono-Regular.ttf");
+}
+@font-face{
+    font-family:"Ubuntu Bold";
+    src:url("ub/UbuntuMono-Bold.ttf");
+}
+html, body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden !important;
+}
+*{
+    outline:0;
+    text-decoration:none;
+}
+.root{
+    width:100%;
+    height:auto;
+}
+.side-bar{
+    width: 5%;
+    height:100vh;
+    position:fixed;
+    display:block;
+    background:rgb(22, 22, 22);
+    text-align:center;
+    float:left;
+    overflow: hidden !important;
+    transition-duration: 0.5s;
+}
+.logo i{
+    color:#fff !important;
+    font-size:50px;
+}
+.logo{
+    margin-top:20px;
+}
+.logo_title{
+    color:rgb(233, 55, 55);
+    font-family:"Ubuntu Bold";
+    font-size:11px;
+}
+.menu{
+    margin-top:50px !important ;
+}
+.menu a{
+    color:#fff;
+    display: block;
+    padding:15px;
+    font-size:23px;
+    transition-duration: 0.5s;
+}
+.menu a:hover, .selected{
+    background:rgb(233, 55, 55);
+    
+}
+.screen{
+    width:95%;
+    height:auto;
+    float:right;
+    transition-duration:0.5s;
+}
+.home{
+    width:100%;
+    height:100vh;
+    background:url("IMG/img.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.shadow{
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.61);
+    
+}
+.page_title{
+    padding-top:1px;
+    text-align:center; 
+}
+.top_title{
+    color:#fff;
+    font-family:"Ubuntu Bold";
+    font-size:30px;
+}
+#main_photo{
+    margin:auto;
+    display:block;
+    width:230px;
+}
+.para p{
+    color:#fff;
+    font-family:"Ubuntu";
+    font-size:20px;
+}
+.para{
+    text-align:center;
+    margin:auto;
+    width:70%;
+}
+.seemorebtn{
+    width:200px;
+    height:50px;
+    color:#fff;
+    background:none;
+    border:1px solid #fff;
+    margin-top:20px;
+    font-family:"Ubuntu";
+    border-radius:5px;
+    transition-duration:0.5s;
+    font-size:17px;
+}
+.cent{
+    text-align:center;
+}
+.seemorebtn:hover{
+    background:rgba(255, 255, 255, 0.349);
+}
+.search_block{
+    width:100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.815);
+    position:fixed;
+    top:0;
+    float:right !important;
+    display:none;
+}
+.center{
+    position:relative;
+    top:45%;
+    transform:translateY(-50%);
+    text-align:center;
+}
+.search_title{
+    color:#fff;
+    font-family:"Ubuntu Bold";
+    font-size:40px;
+}
+.exit_btn{
+    background: none;
+    color:#fff;
+    border:none;
+    font-size:30px;
+    float:right;
+}
+.center form input{
+    width:300px;
+    padding:15px;
+    border:none;
+    border-radius:3px;
+    font-family:"Ubuntu";
+}
+.center form button{
+    color:#fff;
+    font-family:"Ubuntu";
+    background:none;
+    border:1px solid #fff;
+    width:150px;
+    height:43px;
+    border-radius:3px;
+    transition-duration: 0.5s;
+}
+.center form button:hover{
+    background: rgba(255, 255, 255, 0.349);
+}
+.navbar{
+    width:100%;
+    height:auto;
+    display:flex;
+}
+.lg{
+    display:block;
+    margin:10px;
+    margin-lefT:40px;
+}
+.lg p{
+    color:#fff;
+    font-family:"Ubuntu Bold";
+    border:1px solid #fff;
+    padding:20px 40px 20px 40px;
+    border-radius:5px;  
+}
+.nav{
+    display:block;
+    margin:47px;
+}
+.nav a{
+    color:#Fff;
+    font-family:"Ubuntu";
+    padding:10px;
+    font-size:17px;
+}
+.categories{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(
+        45deg
+        , #2e0284, #e93737);
+        padding-top:1px;
+        text-align:center;
+}
+
+
+::-webkit-scrollbar {
+    width:3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(194, 14, 14);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 63, 63);
+  }
+  .centt{
+      position:relative;
+      top:50%;
+      transform: translateY(-50%);
+      align-items: center;
+      justify-content: center;
+  }
+  .catblock{
+      display:inline-block !important;
+        width:160px;
+        height:160px;
+        border:1px solid #fff;
+        align-items: center;
+        justify-content: center;
+        border-radius:50%;
+        margin:10px;
+        background:rgba(255, 255, 255, 0.062);
+    }
+  .cat_title{
+      color:#fff;
+      font-family:"Ubuntu Bold";
+  }
+  .cat_img{
+      color:#fff;
+      font-size:40px;
+  }
+  .centt #lg{
+    color:#fff;
+    font-family:"Ubuntu Bold";
+    font-size:35px;
+  }
+  #center{
+      top:50%;
+      position:relative;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-50%);
+  }
+  .product{
+      width:100%;
+      height:auto;
+      background:rgb(219, 219, 219);
+      padding-top:50px;
+      padding-bottom:40px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+.card{
+    width:230px;
+    height:300px;
+    background:#272727;
+    display: inline-block !important ;
+    margin:5px;
+    border-radius:5px;
+    padding-top:15px !important ;
+    box-shadow:0px 0px 10px 0px #000;
+    text-align:center;
+}
+.card img{
+    max-height:140px;
+}
+.product_title{
+    color:#fff;
+    font-family:"Ubuntu Bold";
+}
+.product_price{
+    color:#fff;
+    font-family: "Ubuntu";
+    color:#3b96eb;
+}
+.card button{
+    color:#fff;
+    font-family:"Ubuntu";
+    height:40px;
+    bordeR:none;
+    border-radius:3px;
+    transition-duration:0.5s;
+}
+.add_cart{
+    background:rgb(206, 32, 32);
+    width:130px;
+}
+.add_cart:hover{
+    background:rgb(233, 44, 44);
+}
+.buy_btn{
+    width:70px;
+    background:#e47c06;
+}
+.buy_btn:hover{
+    background:#ff8800;
+}
+.contact{
+    width:100%;
+    height:auto;
+    padding-top:20px;
+    padding-bottom:70px;
+    background:#272727;
+    text-align:center;
+}
+.contact_title{
+    color:#fff;
+    font-family:"Ubuntu Bold";
+    font-size: 40px;
+}
+.contact form input{
+    display:block;
+    margin:auto;
+    border:none;
+    width:370px;
+    padding:10px;
+    font-family:"Ubuntu";
+    border-radius:3px;
+    margin-top:10px;
+    border-left:3px solid #e93737;  
+}
+.contact form textarea{
+    margin-top:10px;
+    border:none;
+    border-radius:3px;
+    width:370px;
+    padding:10px;
+    height:100px;
+    border-left:3px solid #e93737;
+}
+#fname, #lname{
+    display:inline-block;
+    width:173px;
+}
+.send_btn{
+    display:block;
+    margin:auto;
+    width:170px;
+    height:45px;
+    bordeR:none;
+    background:#e93737;
+    border-radius:3px;
+    color:#fff;
+    font-family:"Ubuntu";
+    margin-top:20px;
+}
+.map{
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+.left_btn{
+    width:50px;
+    height:50px;
+    color:#fff;
+    border-radius:50%;
+    background:none;
+    border:1px solid #fff;
+    font-size:13px;
+    margin-top:20px;
+}
+.fx{
+    width:50px;
+    height:50px;
+    color:#fff;
+    position:fixed;
+    z-index:1;
+    background:rgba(0, 0, 0, 0.534);   
+    border:1px solid #fff;
+    border-radius:50%;
+    top:47% !important;
+    display:none;
+    transition-duration: 1s;
+
+}
+footer{
+    width:100%;
+    height:400px;
+    background:hsl(0, 1%, 24%)
+}
+
+
+.res_navbar{
+    background:rgba(29, 29, 29, 0.822);
+    width:100% !important;
+    height:auto;
+    display:flex;
+    overflow: hidden !important;
+
+}
+.res_nav a{
+    color:#fff;
+    padding:20px;
+    padding-top:100%;
+    padding-bottom:100%;
+    font-size:16px;
+    transition-duration: 0.5s;
+
+}
+.res_nav a:hover{
+    background:#e93737;
+}
+.res_nav{
+    margin:16px;
+}
+.res_logo p{
+    font-family: "Ubuntu";
+    color:#fff;
+}
+.rs{
+    top:0;
+    position: fixed;
+    display:none;
+    width:100%;
+}
+.atp{
+    display:block;
+    margin-top:20px !important ;
+
+    border:none;
+    color:#fff;
+    background:#e93737;
+    width:170px;
+    height:45px;
+    border-radius:3px;
+    box-shadow:0px 0px 5px 0px #000;
+    margin:auto;
+}
+.allt{
+    width:100%;
+    text-align:center;
+    height:auto;
+}
+#all{
+    color:#e93737;
+    font-family:"Ubuntu Bold";
+    font-size:30px;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.918);
+    overflow-x:hiddden !important;
+  }
+  .damn {
+    display: flex;
+    width: 100%;
+    height: 90%;
+  }
+  
+  #ftlogo {
+    color: rgb(177, 3, 3);
+    font-family: "Ubuntu Bold";
+    font-weight: 1000;
+    font-size: 30px;
+    padding: 5px;
+  }
+  #sutitle {
+    color: #ccc;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+  }
+  .ft {
+    width: 25%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+  }
+  #support a,
+  #links a {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    color: #fff;
+    font-family: agency fb;
+    padding-bottom: 5px;
+  }
+  .ft a i {
+    background: #fff;
+    color: rgb(177, 3, 3);
+    margin: 5px;
+    padding: 15px;
+  
+    border-radius: 100%;
+  }
+  #copy {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Ubuntu";
+    color: #fff;
+  }
+  .ft input {
+    margin-top: 20px;
+    width: 290px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 0px #fff;
+  }
+  .ft input::placeholder {
+    font-size: 15px;
+    color: rgb(165, 161, 161);
+  }
+  .ft button {
+    margin-top: 30px;
+    width: 150px;
+    color: #fff;
+    background: rgb(177, 3, 3);
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    font-family: "Ubuntu";
+    box-shadow: 0px 0px 10px 0px #fff;
+  }
+  .ft a {
+    transition-duration: 0.5s;
+  }
+  .close {
+    text-align: center;
+    color: rgb(177, 3, 3) !important;
+    font-size: 20px !important ;
+    display: none;
+  }
+  #twitter i,
+  #instagram i,
+  #youtube i,
+  #youtube,
+  #twitter,
+  #instagram {
+    transition-duration: 0.5s;
+  }
+  #twitter i:hover {
+    background: #1da1f2;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px #fff;
+  }
+  #youtube i:hover {
+    background: #ff0000;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px #fff;
+  }
+  #instagram i:hover {
+    color: #fff;
+    background: linear-gradient(120deg, #ffb64d, #cd36a2, #495fca);
+    box-shadow: 0px 0px 10px 0px #fff;
+  }
+  #lll {
+    width: 100px;
+  }
+  
+  .pppp {
+    display: none;
+  }
+  
+  .ft .fa-globe{
+      font-size:80px;
+      color:#fff;
+  }

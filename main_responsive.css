@@ -1,0 +1,134 @@
+@media(max-width:1157px){
+  .logo i{
+    font-size:30px !important;
+  }
+  .logo p{
+    font-size:7px;
+  }
+  .menu a{
+    font-size:13px !important; 
+  }
+  .left_btn{
+    width:40px !important;
+    height:40px !important;
+    font-size:10px !important;
+  }
+}
+
+@media(){
+
+}
+
+
+
+@media(max-width:1006px){
+  .side-bar{
+    display: none !important;
+  }
+  .screen{
+    width:100% !important;
+  }
+  .navbar{
+    display: none !important;
+  }
+  .rs{
+    display: block !important;
+  }
+  .shadow{
+    padding-top:50px !important; 
+  }
+  #main_photo{
+    width:170px !important;
+  }
+}
+
+@media(max-width:999px){
+  .para p{
+    font-size:15px !important;
+  }
+  .top_title{
+    font-size:20px;
+  }
+}
+
+/**/
+@media (max-width: 1289px) {
+  .ft input {
+    width: 87% !important;
+  }
+}
+@media (max-width: 749px) {
+  .ft a i {
+    padding: 10px !important;
+    font-size: 15px !important;
+  }
+  #ftlogo {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 560px) {
+  #support,
+  #links {
+    display: none !important;
+  }
+  .damn {
+    display: flex !important ;
+    flex-direction: column !important;
+  }
+  .ft {
+    height: auto !important;
+    width: 100% !important;
+  }
+  #scl {
+    position: relative !important;
+    display: block !important ;
+
+    height: auto !important;
+  }
+  footer {
+    height: 400px !important;
+    overflow: hidden !important;
+
+  }
+  #news {
+    float: left !important;
+    display: block !important ;
+    margin-top: -20px !important;
+  }
+}
+
+
+/*HEIGHT*/
+@media(max-height:877px){
+  .home,.categories{
+    height:auto !important; 
+  }
+  .categories{
+    padding-bottom: 30px;
+  }
+  .centt{
+    top:0 !important;
+    transform:translateY(0%) !important ; 
+  }
+  .home .shadow{
+    padding-bottom:30px;
+  }
+}
+
+
+@media(max-width:762px){
+  .top_title{
+    font-size:20px !important;
+  }
+}
+
+
+@media(max-width:494px){
+  .res_logo p{
+    font-size: 13px !important ;
+  }
+  .res_nav a{
+    font-size:10px !important;
+    padding:10px !important;
+  }
+}

@@ -1,0 +1,483 @@
+@font-face{
+    font-family:"Ubuntu";
+    src:url('../../ub/UbuntuMono-Regular.ttf');
+}
+@font-face{
+    font-family:"Ubuntu Bold";
+    src:url('../../ub/UbuntuMono-Bold.ttf');
+}
+html, body{
+    margin:0;
+    padding:0;
+    background:#d0d0d0;
+}
+*{
+    outline:0;
+    font-family:"Ubuntu";
+    text-decoration: none;
+}
+header{
+    width:100%;
+    height:auto;
+}
+.navbar{
+    width:100%;
+    height:100%;
+    background:#222;
+    display:flex;
+    overflow: hidden;
+}
+.logo{
+    margin-left:20px;
+}
+.logo p{
+    color:#fff;
+    font-family:"Ubuntu Bold"; 
+    font-size:20px;
+}
+.logout{
+    display:block;
+    position:absolute;
+    right:20px;
+    top:21px;
+}
+.logout a{
+    color:#fff;
+    font-family:"Ubuntu";
+    background:#e93737;
+    padding:13px 40px 13px 40px;
+    border-radius:3px;
+    border-bottom:5px solid #bb0b0b;
+}
+.nav{
+    margin:23px;
+}
+.nav a{
+    color:#fff;
+    font-family:"Ubuntu";
+    padding:10px;
+    font-size:16px;
+    padding-top:100%;
+    padding-bottom:100%;
+    transition-duration: 0.5s;
+
+
+}
+.nav a:hover{
+    background:#e93737 !important;
+}
+.rep{
+    background:rgb(214, 148, 6);
+}
+
+.autoFull{
+    width:100%;
+    height:auto;
+}
+.title{
+    color:#fff;
+    font-family: "Ubuntu Bold";
+    display: block;
+    margin:auto;
+    background:#e93737;
+    padding:20px;
+    font-size:25px;
+    text-align:center;
+}
+.selected{
+    background:#e93737;
+}
+.msg_container{
+    width:100%;
+    height:auto;
+}
+
+table, th {
+    border:1px solid #000;
+    border-collapse: collapse;
+}
+
+#t th{
+    background:#333;
+    color:#fff;
+    padding-top:20px;
+    padding-bottom:20px;
+        
+}
+.v_btn{
+    color:#fff;
+    background:#bb0b0b;
+    height:40px;
+    border:none;
+    border-radius:3px;
+    padding:5px 20px 5px 20px;
+    margin-top:5px ;
+    margin-bottom:5px ;
+}
+.messageROOT{
+    width:100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.719);
+    top:0;
+    position:fixed;
+    display: none;
+}
+.message_container{
+    width:800px;
+    height:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    background:#eee;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+    margin:auto;
+    border-radius:10px;
+    padding-left:10px;
+    border-left:5px solid #bb0b0b;
+}
+.closebtn{
+    background:none;
+    border:none;
+    font-size:20px;
+    color:#fff;
+    position:absolute;
+    top:10px;
+    right:10px; 
+}
+.msg_title{
+    color:#bb0b0b;
+    display:block;
+    text-align:center;
+    font-family:"Ubuntu Bold";
+    font-size: 20px;
+}
+
+.txt_message{
+    text-align:left;
+    margin-left:10px;
+}
+.workstation{
+    width:0px;
+    height:0px;
+    overflow: hidden;
+}
+.edit{
+    text-align:center;
+}
+.cbtn{
+    color:#fff;
+    background:#bb0b0b;
+    border:none;
+    width:200px;
+    height:50px;
+    border-radius:5px;
+    margin-top:20px;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+.frm{
+    width:700px;
+    height:auto;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin:auto;
+    text-align:center;
+}
+.inp{
+    background:rgb(41, 41, 41);
+    width:400px;
+    border-radius:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    height:auto;
+    margin:auto;
+    margin-top:20px;
+}
+.inp label{
+    color:#fff;
+    padding-right:2px;
+    padding-left:2px;
+
+}
+.inp input{
+    width:320px;
+    padding:10px;
+    border:none;
+    background:none;
+    color:#fff;
+}
+
+::placeholder{
+    color:#fff;
+}
+.sub_btn{
+    width:150px;
+    height:45px;
+    color:#fff;
+    border:none;
+    margin-top:20px;
+    border-radius:5px;
+    box-shadow: 0px 0px 5px 0px #000;
+    background:#bb0b0b;
+}
+section{
+    display:none;
+}
+.add_note{
+    color:#fff;
+    background:#e93737;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    box-shadow:0px 0px 10px 0px #000;
+    position:fixed;
+    top:90%;
+    right:30px;
+    font-size:20px;
+    transition-duration:0.5s;
+}
+.add_note:hover{
+    background:#bb0b0b;
+}
+.notes_container{
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+.note_title{
+    display: block;
+    padding:10px;
+    font-size:30px;
+    margin-left:10px;
+    text-align:left;
+    font-family:"Ubuntu Bold";
+    color:#fff;
+    
+}   
+.note{
+    width:800px;
+    height:auto;
+    border-radius:5px !important;
+    margin:auto;
+    background:#bb0b0b;
+    box-shadow: 0px 0px 10px 0px #000;
+    padding-bottom:20px;
+    overflow: hidden;
+    margin-top:20px;
+}
+.edit_btn_{
+    color:#fff;
+    background:#e93737;
+    border:none;
+    border-radius: 3px;
+    width:130px;
+    height:40px;
+    box-shadow: 0px 0px 10px 0px #fff;
+    margin-top:20px;
+}
+.nt{
+    color:#fff;
+    text-align:left;
+    margin-left:20px;
+    display: block !important;
+}
+
+.addnoteROOT{
+    width:100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.733);
+    position:fixed;
+    display: none;
+    top:0;
+}
+.add{
+    width:800px;
+    height:auto;
+    padding:5px;
+    background: #fff;
+    margin:auto;
+    position:relative;
+    top:50%;
+    padding-left:20px;
+    border-left:5px solid #e93737;
+    transform:translateY(-50%);
+    border-radius:10px;
+}
+.add_title{
+    color:#e93737;
+    font-family:"Ubuntu Bold";
+    font-size:25px;
+}
+.products{
+    padding-bottom:30px;
+}
+.add form input{
+    width:95%;
+    padding:10px;
+    font-family:"Ubuntu";
+    color:#000;
+}
+.add form input::placeholder , textarea::placeholder{
+    color:rgb(97, 97, 97) !important;
+}
+textarea{
+    padding:11px;
+    margin-top:20px;
+    width:95%;
+    color: #000;
+    font-family:"Ubuntu";
+    height:300px;
+}
+.subbtn{
+    color:#fff;
+    background:#e93737;
+    border:none;
+    border-radius:3px;
+    width:130px;
+    height:40px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.products{
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+.prod{
+    width:600px;
+    height:auto;
+    background:#272727;
+    border-radius:5px;
+    text-align:left;
+    padding:10px;
+    padding-bottom:20px;
+    margin:auto;
+    margin-top:20px;
+    box-shadow:0px 0px 10px 0px #000;
+}
+.prod img{
+    max-height:100px !important;
+    width:auto !important;
+    margin:auto;
+    display:block;
+}
+.p_title{
+    color:#fff;
+    font-family:"Ubuntu Bold";
+    font-size:20px;
+    text-align:center;
+}
+.desc{
+    color:#fff;
+    display:block;
+    
+}
+.delete_btn{
+    width:150px;
+    height:40px;
+    border:none;
+    color:#fff;;
+    border-radius: 3px;
+    background:#e93737;
+}
+.price{
+    color:#2868de;
+    font-family:"Ubuntu";
+}
+.add_prod{
+    background:none;
+    color:#fff;
+    background:#e93737;
+    font-size:20px;
+    width:50px;
+    border:none;
+    border-radius:50%;
+    height:50px;
+    box-shadow: 0px 0px 10px 0px #000;
+    position:fixed;
+    top:91%;
+    right:20px;
+}
+.add_prodROOT{
+    width:100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.644);
+    position:fixed;
+    top:0;
+    display:none;
+}
+.Container{
+    width:800px;
+    height:auto;
+    margin:auto;
+    background:#fff;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    border-radius:10px;
+    padding-left:10px;
+    border-left:5px solid #e93737;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.ptitle{
+    color:#bb0b0b;
+    font-family: "Ubuntu Bold";
+    font-size:20px;
+    text-align:center;
+}
+.Container form input::placeholder{
+    color:rgb(75, 75, 75);
+}
+
+
+.Container form input[type="text"], .Container form input[type="number"]{
+    padding:10px;
+    width:364px;
+}
+.liiiit{
+    color:#fff;
+    background:#e93737;
+    height:40px;
+    border:none;
+    border-radius:3px;
+    width:98%;
+    margin-top:20px;
+}
+.Container form textarea{
+    height:150px;
+}
+.sb{
+    color:#fff;
+    background:#e93737;
+    border:none;
+    width:150px;
+    height:40px;
+    margin-top:10px;
+    border-radius:3px;
+}
+#link{
+    width:760px;
+    margin-top:20px;
+}
+.update{
+    display: none;
+}
+
+
+::-webkit-scrollbar {
+    width:3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(194, 14, 14);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 63, 63);
+  }
