@@ -7,7 +7,7 @@
     $password = "";
     $conn = new mysqli($server, $username, $password, "bachmanity"); 
     if ($conn){
-        //OUR CODE
+        
         $target_dir = "uploads/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
